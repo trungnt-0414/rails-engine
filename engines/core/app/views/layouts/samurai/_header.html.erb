@@ -9,12 +9,19 @@
         <li class="<%= active samurai.root_path %>">
           <%= link_to 'Home', samurai.root_path %>
         </li>
+
         <li class="<%= active samurai.edit_user_registration_path %>">
           <%= link_to 'My Account', samurai.edit_user_registration_path %>
         </li>
+
+        <%- if current_user.admin? %>
+          <li class="<%= active(samurai.admin_admin_index_path) %>">
+            <%= link_to 'Admin', samurai.admin_admin_index_path %>
+          </li>
+        <% end %>
+
         <li>
-          <%= link_to 'Logout', samurai.destroy_user_session_path,
-          method: :delete %>
+          <%= link_to 'Logout', samurai.destroy_user_session_path, html: {method: :delete} %>
         </li>
       </ul>
     </div>
