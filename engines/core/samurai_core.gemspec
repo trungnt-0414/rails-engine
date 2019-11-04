@@ -32,4 +32,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "bootstrap-sass"
   spec.add_dependency "autoprefixer-rails"
   spec.add_dependency "devise"
+  spec.add_dependency "cancancan"
 end
