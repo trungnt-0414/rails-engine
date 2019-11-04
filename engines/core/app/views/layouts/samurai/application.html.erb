@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Core</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "samurai/application", media: "all" %>
+  </head>
+
+  <body>
+    <body>
+      <%= render "layouts/samurai/header" %>
+
+      <div class="container" role="main">
+        <% flash.each do |key, value| %>
+          <div class="<%= flash_class key.to_sym %>"><%= value %></div>
+        <% end %>
+
+        <div class="jumbotron">
+          <%= yield %>
+        </div>
+      </div>
+    </body>
+  </body>
+</html>

@@ -28,4 +28,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rails", "~> 6.0.0"
 
   spec.add_development_dependency "mysql2"
+  spec.add_dependency "sass-rails"
+  spec.add_dependency "bootstrap-sass"
+  spec.add_dependency "autoprefixer-rails"
+  spec.add_dependency "devise"
 end
