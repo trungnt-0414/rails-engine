@@ -1,4 +1,4 @@
-require "samurai/contacts/engine"
+require "deface"
 
 module Samurai
   module Contacts

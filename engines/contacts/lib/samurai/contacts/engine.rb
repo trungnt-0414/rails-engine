@@ -3,7 +3,7 @@ module Samurai
     class Engine < ::Rails::Engine
       isolate_namespace Contacts
 
-      paths["app/views"] << "app/views/samurai"
+      paths["app/views"] << "app/views/samurai/contacts"
 
       initializer :append_migrations do |app|
         unless app.root.to_s.match(root.to_s)
