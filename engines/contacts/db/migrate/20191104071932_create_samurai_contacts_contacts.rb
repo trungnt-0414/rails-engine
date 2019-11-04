@@ -7,6 +7,7 @@ class CreateSamuraiContactsContacts < ActiveRecord::Migration[6.0]
       t.string :last_name
       t.string :company
       t.string :email
+      t.string :phone
       t.references :user
 
       t.timestamps null: false

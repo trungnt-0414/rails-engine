@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2019_11_04_071932) do
     t.string "last_name"
     t.string "company"
     t.string "email"
+    t.string "phone"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
