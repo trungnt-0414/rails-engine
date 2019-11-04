@@ -28,5 +28,7 @@ Things you may want to cover:
 ```bash
 rails new SamuraiCRM --skip-test-unit
 
-rails plugin new engines/todo --mountable --skip-test-unit -d mysql
+rails plugin new engines/core --mountable -T -d mysql
+
+rails plugin new engines/contacts --mountable -T -d mysql
 ```

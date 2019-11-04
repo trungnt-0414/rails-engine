@@ -12,7 +12,10 @@ gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.7"
 gem "bootsnap", ">= 1.4.2", require: false
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "modular_engine"
+gem "deface"
 gem "samurai_core", path: "engines/core"
+gem "samurai_contacts", path: "engines/contacts"
 
 group :development, :test do
   gem "pry"
@@ -30,4 +33,3 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
-
