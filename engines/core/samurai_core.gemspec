@@ -33,4 +33,12 @@ Gem::Specification.new do |spec|
   spec.add_dependency "autoprefixer-rails"
   spec.add_dependency "devise"
   spec.add_dependency "cancancan"
+  spec.add_dependency "bootsnap", ">= 1.4.2"
+
+  spec.add_development_dependency "rspec-rails", "~> 4.0.0.beta2"
+  spec.add_development_dependency "factory_bot_rails"
+  spec.add_development_dependency "ffaker"
+  spec.add_development_dependency "database_cleaner"
+  spec.add_development_dependency "shoulda-matchers"
+  spec.add_development_dependency "rails-controller-testing"
 end

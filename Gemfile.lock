@@ -3,7 +3,9 @@ PATH
   specs:
     samurai_core (0.0.1)
       autoprefixer-rails
+      bootsnap (>= 1.4.2)
       bootstrap-sass
+      cancancan
       devise
       rails (~> 6.0.0)
       sass-rails
@@ -78,6 +80,7 @@ GEM
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
     builder (3.2.3)
+    cancancan (3.0.1)
     capybara (3.29.0)
       addressable
       mini_mime (>= 0.1.3)
