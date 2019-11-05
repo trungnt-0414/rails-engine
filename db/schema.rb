@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_04_071932) do
+ActiveRecord::Schema.define(version: 2019_11_05_012527) do
 
   create_table "samurai_contacts_contacts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "first_name"
@@ -22,6 +22,17 @@ ActiveRecord::Schema.define(version: 2019_11_04_071932) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_samurai_contacts_contacts_on_user_id"
+  end
+
+  create_table "samurai_tasks_tasks", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.string "title"
+    t.text "context"
+    t.bigint "user_id"
+    t.bigint "contact_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["contact_id"], name: "index_samurai_tasks_tasks_on_contact_id"
+    t.index ["user_id"], name: "index_samurai_tasks_tasks_on_user_id"
   end
 
   create_table "samurai_users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
