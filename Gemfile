@@ -16,7 +16,7 @@ gem "modular_engine"
 gem "deface"
 gem "samurai_core", path: "engines/core"
 gem "samurai_contacts", path: "engines/contacts"
-gem 'samurai_tasks', path: 'engines/tasks'
+gem "samurai_tasks", path: "engines/tasks"
 
 group :development, :test do
   gem "pry"

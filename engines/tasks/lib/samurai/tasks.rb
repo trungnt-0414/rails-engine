@@ -1,4 +1,4 @@
-require "samurai/tasks/engine"
+require "deface"
 
 module Samurai
   module Tasks
