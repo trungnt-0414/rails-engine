@@ -2,7 +2,7 @@ class CreateSamuraiTasksTasks < ActiveRecord::Migration[6.0]
   def change
     create_table :samurai_tasks_tasks do |t|
       t.string :title
-      t.text :context
+      t.text :content
       t.references :user, index: true
       t.references :contact, index: true
 
